@@ -10,5 +10,5 @@ if(!preg_match($pattern, $argv[1], $time))
 }
 $months = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
 $months = array_search(strtolower($time[3]), $months) + 1;
-echo mktime($time[5], $time[6], $time[7], $month, $time[2], $time[4]);
+echo mktime($time[5], $time[6], $time[7], $months, $time[2], $time[4]);
 ?>
