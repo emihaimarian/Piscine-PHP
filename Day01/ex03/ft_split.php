@@ -4,6 +4,6 @@
 	{
 		$ret = array_filter(explode(' ', $str));
 		sort ($ret);
-		return $ret);
+		return $ret;
 	}
 ?>

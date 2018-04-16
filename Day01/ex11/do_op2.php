@@ -28,17 +28,17 @@ function find_operator($tab)
 		return array_search('-', $tab);
 	else if (in_array('*', $tab))
 		return array_search('*', $tab);
-	else if (in_array('/', $tab)
+	else if (in_array('/', $tab))
 		return array_search('/', $tab);
-	else if (in_array('+', $tab)
+	else if (in_array('+', $tab))
 		return array_search('=', $tab);
-	else if (in_array('%', $tab)
+	else if (in_array('%', $tab))
 		return array_search('%', $tab);
 }
 
 function split_and_trim($string)
 {
-	$splitted = str_spli($string);
+	$splitted = str_split($string);
 	$result = array();
 	foreach($splitted as $elem)
 	{

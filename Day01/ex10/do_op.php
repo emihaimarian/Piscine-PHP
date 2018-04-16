@@ -26,7 +26,7 @@ foreach($argv as $i => $el)
 {
 	if ($i == 0)
 		continue;
-	array_push($tab, trim($sel));
+	array_push($tab, trim($el));
 }
 echo calculate($tab[0], $tab[2], $tab[1]);
 ?>

@@ -7,7 +7,7 @@ function ssap_sort($tab)
 	$other = array();
 	foreach ($tab as $elem)
 	{
-		$first = ord($elem[0])
+		$first = ord($elem[0]);
 			if (($first >= 65 && $first <= 90) || ($first >= 97 && $first <= 122))
 				array_push($letter, $elem);
 			else if ($first >= 48 && $first <= 57)
@@ -28,7 +28,7 @@ foreach($argv as $i => $elem)
 	if ($i = 0)
 		continue;
 	$words = explode(" ", $elem);
-	if (count($word) == 1)
+	if (count($words) == 1)
 		array_push($result, $elem);
 	else
 	{
@@ -45,4 +45,3 @@ foreach($result as $elem)
 	echo "$elem\n";
 }
 ?>
-
